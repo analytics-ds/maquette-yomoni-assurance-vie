@@ -148,3 +148,7 @@ body.dsk-hide-tags .dsk-tag{display:none}
 @media (max-width:767px){.dsk-supports .intro{grid-template-columns:1fr;gap:16px}}
 
 @media (max-width:1023px){header [class*="header_nav__"]{display:none}header [class*="header_right__"]>*:not(:last-child){display:none}}
+.dsk-faq{margin:8px 0 32px}
+.dsk-faq details{border-bottom:1px solid var(--color-gris-lin)}
+.dsk-faq summary{cursor:pointer;padding:18px 0}
+.dsk-faq summary p{margin:0}
