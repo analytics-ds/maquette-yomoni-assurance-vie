@@ -1,0 +1,150 @@
+/* Blocs ajoutés à la maquette (datashake). Reprennent les tokens Yomoni. */
+.dsk{font-family:"HK Grotesk",sans-serif;color:var(--color-primary,#221e1d)}
+.dsk *{box-sizing:border-box}
+.dsk-section{padding:100px 0;position:relative}
+.dsk-section.bg-beige{background:var(--color-beige,#f5f0e7)}
+.dsk-section.bg-ivoire{background:var(--color-secondary-ivoire,#faf3ed)}
+.dsk-wrap{max-width:1260px;margin:0 auto;padding:0 16px}
+.dsk-h2{font-family:"GT Ultra Median",serif;font-weight:400;font-size:48px;line-height:1.05;letter-spacing:-1.44px;margin:0 0 16px}
+.dsk-h2.center{text-align:center}
+.dsk-lead{font-size:18px;line-height:1.45;margin:0 0 48px;max-width:760px}
+.dsk-lead.center{text-align:center;margin-left:auto;margin-right:auto}
+.dsk-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:14px;line-height:1.4;padding:10px 20px;border-radius:100px;background:var(--color-primary);color:#fff;text-decoration:none;border:1px solid var(--color-primary);transition:opacity .2s}
+.dsk-btn:hover{opacity:.85}
+.dsk-btn.ghost{background:transparent;color:var(--color-primary)}
+.dsk-link{font-weight:700;font-size:14px;color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
+.dsk-legal{font-size:14px;font-style:italic;color:var(--color-warm-grey,#524b47);margin-top:24px}
+.dsk-legal.center{text-align:center}
+
+/* Badge "ajout recommandé" */
+.dsk-tag{position:absolute;top:16px;left:16px;z-index:5;background:#ebe990;color:#221e1d;font:700 12px/1 "HK Grotesk",sans-serif;padding:7px 12px;border-radius:100px;letter-spacing:.02em;box-shadow:0 4px 8px hsla(0,8%,87%,.6)}
+body.dsk-hide-tags .dsk-tag{display:none}
+.dsk-toggle{position:fixed;right:20px;bottom:20px;z-index:9999;background:#221e1d;color:#fff;border:0;border-radius:100px;padding:12px 18px;font:700 13px "HK Grotesk",sans-serif;cursor:pointer;box-shadow:0 8px 16px rgba(0,0,0,.2)}
+
+/* 1. Fil d'Ariane */
+.dsk-bc{font-size:14px;font-weight:500;margin:0 0 24px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--color-warm-grey,#524b47);position:relative}
+.dsk-bc a{color:var(--color-primary);text-decoration:none}
+.dsk-bc a:hover{text-decoration:underline}
+.dsk-bc span[aria-current]{color:var(--color-secondary,#b68568);font-weight:600}
+.dsk-bc .sep{opacity:.5}
+.dsk-bc .dsk-tag{position:static;margin-left:8px;padding:5px 10px;font-size:11px}
+
+/* 2. Contrats & supports */
+.dsk-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.dsk-card{background:#fff;border:1px solid var(--color-secondary-lin,#f0e5dc);border-radius:20px;padding:28px 24px;display:flex;flex-direction:column;text-align:center}
+.bg-ivoire .dsk-card{background:var(--color-secondary-nacre,#fffcf9)}
+.dsk-card.featured{border:2px solid var(--color-secondary,#b68568)}
+.dsk-badge{align-self:center;display:inline-flex;align-items:center;gap:8px;background:var(--color-dark-brown,#3c2619);color:#fff;border-radius:12px;padding:10px 18px;font-family:"GT Ultra Median",serif;font-size:22px;margin-bottom:18px}
+.dsk-badge svg{width:22px;height:22px}
+.dsk-card h3{font-size:20px;font-weight:700;margin:0 0 10px}
+.dsk-card .desc{font-size:15px;line-height:1.4;margin:0 0 18px;color:var(--color-warm-grey)}
+.dsk-card ul{list-style:none;padding:0;margin:0 0 24px;text-align:left;flex:1}
+.dsk-card li{display:flex;gap:10px;font-size:14px;line-height:1.4;padding:7px 0;border-top:1px solid var(--color-secondary-lin)}
+.dsk-card li:first-child{border-top:0}
+.dsk-card li::before{content:"";flex:0 0 18px;height:18px;border-radius:50%;background:var(--color-secondary-lin) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%23221e1d' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat;margin-top:1px}
+.dsk-card .ctas{display:flex;flex-direction:column;gap:12px;align-items:center}
+.dsk-card .ctas .dsk-btn{width:100%}
+.dsk-ribbon{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--color-secondary);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:100px;white-space:nowrap}
+.dsk-card{position:relative}
+.dsk-center-ctas{display:flex;gap:16px;justify-content:center;margin-top:40px;flex-wrap:wrap}
+
+.dsk-supports{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:center;background:#fff;border-radius:20px;padding:48px}
+.dsk-supports .intro h2{font-size:36px}
+.dsk-supports .intro p{font-size:16px;line-height:1.45;margin:0 0 14px}
+.dsk-scards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dsk-scard{border:1px solid var(--color-secondary-lin);border-radius:16px;padding:22px 18px;display:flex;flex-direction:column;box-shadow:0 4px 8px hsla(0,8%,87%,.4)}
+.dsk-scard .k{font-size:13px;font-weight:600;color:var(--color-warm-grey);margin:0 0 4px}
+.dsk-scard h3{font-size:18px;font-weight:700;margin:0 0 4px;color:var(--color-secondary,#b68568)}
+.dsk-scard .who{font-size:13px;margin:0 0 14px;color:var(--color-warm-grey)}
+.dsk-scard .rate{font-size:14px;margin:0 0 18px;flex:1}
+.dsk-scard .rate strong{display:block;font-family:"GT Ultra Median",serif;font-weight:400;font-size:26px;color:var(--color-primary);margin-top:4px}
+.dsk-scard .dsk-btn{background:var(--color-secondary);border-color:var(--color-secondary)}
+
+/* 3. Simulateur */
+.dsk-sim{display:grid;grid-template-columns:1fr 1.15fr;gap:24px;align-items:stretch}
+.dsk-sim-form,.dsk-sim-res{background:#fff;border-radius:20px;padding:36px}
+.dsk-field{margin-bottom:26px}
+.dsk-field label{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:15px;margin-bottom:10px}
+.dsk-field label output{font-family:"GT Ultra Median",serif;font-weight:400;font-size:22px}
+.dsk-field .hint{font-size:12px;color:var(--color-warm-grey);margin-top:6px}
+.dsk-input{display:flex;align-items:center;border:1px solid var(--color-gris-lin,#e1dcdc);border-radius:12px;padding:0 16px;height:52px;background:var(--color-secondary-nacre)}
+.dsk-input input{border:0;outline:0;background:transparent;font:600 18px "HK Grotesk",sans-serif;width:100%;color:var(--color-primary)}
+.dsk-input span{font-weight:700}
+.dsk input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:6px;background:linear-gradient(to right,var(--color-dark-brown) var(--p,50%),var(--color-secondary-lin) var(--p,50%));outline:0}
+.dsk input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid var(--color-dark-brown);cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.dsk input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#fff;border:2px solid var(--color-dark-brown);cursor:pointer}
+.dsk-scale{display:flex;justify-content:space-between;font-size:12px;color:var(--color-warm-grey);margin-top:8px}
+.dsk-res-top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:18px}
+.dsk-res-top .lbl{font-size:15px;font-weight:600}
+.dsk-res-top .big{font-family:"GT Ultra Median",serif;font-size:44px;line-height:1;color:var(--color-secondary)}
+.dsk-chart{width:100%;height:280px;display:block}
+.dsk-legend{display:flex;gap:20px;font-size:13px;margin:12px 0 20px}
+.dsk-legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.dsk-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+.dsk-kpi{background:var(--color-secondary-ivoire);border-radius:12px;padding:14px}
+.dsk-kpi .l{font-size:12px;color:var(--color-warm-grey);margin-bottom:4px}
+.dsk-kpi .v{font-size:18px;font-weight:700}
+.dsk-sim-res .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.dsk-sim-note{font-size:12px;line-height:1.45;color:var(--color-warm-grey);margin-top:18px}
+
+/* 4. Guides */
+.dsk-guides{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.dsk-guide{display:flex;align-items:center;gap:16px;background:var(--color-secondary-ivoire);border-radius:16px;padding:18px 20px;text-decoration:none;color:var(--color-primary);font-weight:600;font-size:16px;transition:transform .2s,box-shadow .2s}
+.dsk-guide:hover{transform:translateY(-2px);box-shadow:0 8px 16px hsla(0,8%,87%,.6)}
+.dsk-guide .ico{flex:0 0 44px;height:44px;border-radius:50%;background:var(--color-dark-brown);color:#fff;display:flex;align-items:center;justify-content:center}
+.dsk-guide .ico svg{width:22px;height:22px}
+.dsk-guide .arr{margin-left:auto;opacity:.5}
+.dsk-more{margin-top:64px}
+.dsk-more h3{font-family:"GT Ultra Median",serif;font-weight:400;font-size:32px;text-align:center;margin:0 0 32px}
+.dsk-grid4.more .dsk-mcard{border:1px solid var(--color-gris-lin);border-radius:16px;padding:24px;text-decoration:none;color:var(--color-primary);display:flex;flex-direction:column;gap:16px;min-height:150px;background:#fff;border-top:4px solid var(--c,#b68568)}
+.dsk-mcard strong{font-family:"GT Ultra Median",serif;font-weight:400;font-size:22px;line-height:1.15}
+.dsk-mcard span{margin-top:auto;font-size:14px;font-weight:700}
+
+/* 5. Texte SEO + sommaire */
+.dsk-seo{display:grid;grid-template-columns:300px 1fr;gap:64px;align-items:start}
+.dsk-toc{position:sticky;top:100px;border:1px solid var(--color-gris-lin);border-radius:16px;overflow:hidden;background:#fff}
+.dsk-toc p{margin:0;padding:16px 20px;font-weight:700;font-size:15px;background:var(--color-secondary-ivoire)}
+.dsk-toc ol{list-style:none;margin:0;padding:8px 0;counter-reset:t}
+.dsk-toc li a{display:block;padding:10px 20px;font-size:14px;line-height:1.35;color:var(--color-primary);text-decoration:none;border-left:3px solid transparent}
+.dsk-toc li a:hover,.dsk-toc li a.on{border-left-color:var(--color-secondary);background:var(--color-secondary-nacre);font-weight:700}
+.dsk-art{max-width:780px}
+.dsk-art h2{font-family:"GT Ultra Median",serif;font-weight:400;font-size:40px;line-height:1.1;letter-spacing:-1px;margin:0 0 20px}
+.dsk-art h3{font-family:"GT Ultra Median",serif;font-weight:400;font-size:30px;line-height:1.15;margin:56px 0 16px;scroll-margin-top:110px}
+.dsk-art h4{font-size:19px;font-weight:700;margin:28px 0 10px}
+.dsk-art p,.dsk-art li{font-size:17px;line-height:1.6}
+.dsk-art p{margin:0 0 16px}
+.dsk-art ul{padding-left:22px;margin:0 0 16px}
+.dsk-art a{color:var(--color-primary);font-weight:700;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--color-secondary)}
+.dsk-art .chapo{font-size:19px;line-height:1.55}
+.dsk-art table{width:100%;border-collapse:separate;border-spacing:0;margin:8px 0 20px;font-size:15px;border:1px solid var(--color-gris-lin);border-radius:12px;overflow:hidden}
+.dsk-art th{background:var(--color-dark-brown);color:#fff;text-align:left;padding:12px 14px;font-weight:700}
+.dsk-art td{padding:12px 14px;border-top:1px solid var(--color-gris-lin);vertical-align:top}
+.dsk-art tr:nth-child(even) td{background:var(--color-secondary-nacre)}
+.dsk-box{background:var(--color-secondary-ivoire);border-left:4px solid var(--color-secondary);border-radius:12px;padding:20px 24px;margin:24px 0}
+.dsk-box p:last-child{margin:0}
+.dsk-art .src{font-size:13px;color:var(--color-warm-grey)}
+
+@media (max-width:1100px){
+  .dsk-grid4,.dsk-scards{grid-template-columns:repeat(2,1fr)}
+  .dsk-supports{grid-template-columns:1fr;padding:32px}
+  .dsk-seo{grid-template-columns:1fr;gap:32px}
+  .dsk-toc{position:static}
+}
+@media (max-width:767px){
+  .dsk-section{padding:60px 0}
+  .dsk-h2{font-size:32px;letter-spacing:-.6px}
+  .dsk-art h2{font-size:30px}.dsk-art h3{font-size:24px}
+  .dsk-grid4,.dsk-scards,.dsk-guides,.dsk-sim,.dsk-kpis{grid-template-columns:1fr}
+  .dsk-sim-form,.dsk-sim-res{padding:24px}
+  .dsk-res-top .big{font-size:34px}
+  .dsk-supports{padding:24px}
+}
+.dsk-art ul{list-style:disc}.dsk-art ol{list-style:decimal;padding-left:22px;margin:0 0 16px}
+.dsk-art li{margin-bottom:6px}.dsk-art li::marker{color:var(--color-secondary)}
+.dsk-supports{grid-template-columns:1fr;gap:32px}
+.dsk-supports .intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end}
+.dsk-supports .intro h2{margin:0}
+.dsk-scard .rate strong{font-size:24px;line-height:1.15}
+@media (max-width:767px){.dsk-supports .intro{grid-template-columns:1fr;gap:16px}}
+html,body{overflow-x:clip}
+@media (max-width:1023px){header [class*="header_nav__"]{display:none}header [class*="header_right__"]>*:not(:last-child){display:none}}
